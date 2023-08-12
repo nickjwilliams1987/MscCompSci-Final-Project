@@ -1,0 +1,16 @@
+{
+    "api_url": "https://data.yorkopendata.org/dataset/6449d8f5-76e7-4aff-bfb1-46d46542a56c/resource/b36a8dfc-49e1-4ce0-99d3-baefb5c8bdfd/download/footfallhourly.csv",
+    "gcp_project": "nwilliams-msc-comp-sci",
+    "gcp_bucket": "nw-pipeline-storage",
+    "gcp_bucket_folder_raw": "footfall_york_raw",
+    "gcp_bucket_folder_processed": "footfall_york_processed",
+    "csv_filename": "york_footfall_data.csv",
+    "bq_dataset": "footfall",
+    "bq_table": "footfall_york",
+    "schema": [
+        {"name": "city", "type": "STRING"},
+        {"name": "footfall_location", "type": "STRING"},
+        {"name": "timestamp", "type": "TIMESTAMP"},
+        {"name": "total_footfall", "type": "INT64"}
+    ]
+}
