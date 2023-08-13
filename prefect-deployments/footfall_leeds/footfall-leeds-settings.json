@@ -1,0 +1,29 @@
+{
+    "api_url": "https://datamillnorth.org/api/dataset/leeds-city-centre-footfall-data",
+    "download_url": "https://datamillnorth.org/download/leeds-city-centre-footfall-data/{{key}}/{{file_name}}",
+    "gcp_project": "nwilliams-msc-comp-sci",
+    "gcp_bucket": "nw-pipeline-storage",
+    "gcp_bucket_folder_raw": "footfall_leeds_raw",
+    "gcp_bucket_folder_processed": "footfall_leeds_processed",
+    "bq_dataset": "footfall",
+    "bq_table": "footfall_leeds",
+    "exclude_files": [
+        "Christmas%20analysis.csv"
+    ],
+    "prefered_footfall_columns": [
+        "ReportCount",
+        "TotalCount",
+        "InCount",
+        "Count"
+    ],
+    "prefered_location_columns": [
+        "LocationName",
+        "Location"
+    ],
+    "schema": [
+        {"name": "city", "type": "STRING"},
+        {"name": "footfall_location", "type": "STRING"},
+        {"name": "timestamp", "type": "TIMESTAMP"},
+        {"name": "total_footfall", "type": "INT64"}
+    ]
+}
