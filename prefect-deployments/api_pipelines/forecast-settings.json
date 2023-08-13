@@ -1,0 +1,26 @@
+{
+    "gcp_project": "649599643078",
+    "api-key-secret": "openWeather-api-key",
+    "api_cities": [
+        {"city": "Leeds", "lat": "53.8008", "lon": "-1.5491"},
+        {"city": "York", "lat": "53.9583", "lon": "-1.0803"}
+    ],
+    "storage_bucket": "nw-pipeline-storage",
+    "storage_raw_folder": "forecasts_raw",
+    "storage_processed_folder": "forecasts_processed",
+    "bq_dataset": "weather",
+    "bq_tablename": "forecasts",
+    "schema": [
+        {"name": "city", "type": "STRING"},
+        {"name": "date", "type": "DATE"},
+        {"name": "min_temp", "type": "FLOAT64"},
+        {"name": "max_temp", "type": "FLOAT64"},
+        {"name": "pressure", "type": "INT64"},
+        {"name": "humidity", "type": "INT64"},
+        {"name": "clouds", "type": "INT64"},
+        {"name": "wind", "type": "FLOAT64"},
+        {"name": "rain", "type": "FLOAT64"},
+        {"name": "snow", "type": "FLOAT64"}
+    ]
+
+}
